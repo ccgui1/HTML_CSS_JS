@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+/* 确定版心，每个版心水平居中，可以定义为版心为公共类 */
+.w {
+   width: 1200px;
+   margin: auto;
+}
+
+body{
+    background-color: #f3f5f7;
+}
+li {
+  list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.header{
+    height: 42px;
+    /* background-color: skyblue; */
+    /* 注意，此处会覆盖掉w中的margin */
+    margin: 30px auto  ; 
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+  .clearfix {  /* IE6,7专有 */
+    *zoom: 1;
+  }
+
+.logo{
+    float: left;
+    width: 198px;
+    height: 42px;
+    /* background-color: pink; */
+}
+
+.nav {
+    float: left;
+    margin-left: 60px;
+    
+}
+.nav ul li{
+    float: left;  
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    /* 行元素没有高度，所有要设置block */
+    display: block;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #050505;
+
+}
+
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff ;
+    color: #00a4ff;
+}
+
+.search {
+   
+    float: left;
+    width: 412px;
+    height:42px;
+    background-color: skyblue;
+    margin-left: 70px;
+}
+
+.search input{
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    border-right: 0;
+    color: #bfbfbf;
+    font-size: 14px;
+    padding-left: 15px;
+
+}
+
+.search button{
+    float: left;
+    width: 50px;
+    height: 42px;
+    background:url(images/search.png);
+    border: 0px;
+}
+
+.user {
+    float: right;
+    line-height: 42px;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #666666;
+
+}
+
+/* banner区域 */
+.banner {
+    height: 421px;
+    background-color: #1c036c;
+}
+
+.banner .w {
+    height: 421px;
+    background: url(images/banner.png) no-repeat top center;
+}
+
+/* 侧面导航栏 */
+.banner .w .subnav {
+    float: left;
+    width: 193px;
+    height: 421px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.subnav ul li {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+}
+
+.subnav ul li a {
+    
+    font-size: 14px;
+    color: white;
+
+}
+
+.subnav ul li a  span{
+    float: right;
+}
+
+.subnav ul li a:hover{
+    color: #69c5f7;  
+}
+
+.course {
+    float: right;
+    width: 230px;
+    height: 300px;
+    background-color: rgb(255, 255, 255); 
+    /* 浮动的盒子不会有外边距合并的问题 */
+    margin-top: 50px;
+}
+
+.course h2{
+    height:48px ;
+    font-size: 18px;
+    color:white; 
+    line-height: 48px;
+    text-align: center;
+    background-color:#9bceea
+    
+}
+
+.bd {
+    padding: 0 20px;
+    background-color: #ffffff
+}
+
+.bd ul li {
+
+   border-bottom: 1px #b2b1b1 solid;
+   padding: 14px 0px;
+   color: #9a9a9a;
+   
+}
+
+
+.bd ul li h4{
+     color: #4e4e4e;
+     font-size:16px;
+    
+}
+
+.bd ul li p{
+    color: #767575;
+    font-size:12px;
+   
+}
+.bd a{
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color:#22b0ff ;
+    height: 38px;
+    line-height:38px;
+    text-align: center;
+    border: 1px solid #22b0ff;
+    margin-top: 5px;
+   
+}
+/* 精品推荐模块 */
+.goods {
+   height: 60px ;
+   background-color: #ffffff;
+   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+   margin-top: 10px;
+   line-height: 60px;
+}
+
+.goods h3{
+    float: left;
+    color: #00a4ff;
+    text-align: center;
+    margin:0px 35px 0 36px;
+
+    
+    
+}
+
+.goods ul li {
+    /* display: inline-block; */
+    float: left; 
+    text-align: center;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0px 35px  0px 35px;
+    margin: 22px 0px 22px 0px ;
+    border-left: 1px solid rgb(185, 185, 185);
+
+}
+.goods ul li a{
+    color: #050505;
+}
+
+.goods > a{
+    float: right;
+    color: #00a4ff;
+    font-size: 14px;
+    margin-right: 28px;
+    text-align: center;  
+}
+
+.box {
+    height: 600px;
+    margin-top: 35px;
+ 
+
+}
+
+.box h3{
+    float: left;
+}
+
+.box h5 {
+    float: right;
+}
+ 
+.box_bd ul{
+    width: 1225px;
+}
+
+.box_bd ul li {
+    float: left;
+    width: 230px;
+    height: 285px;
+    margin: 15px 15px 0px 0px;  
+    background-color: white;
+}
+
+.box_bd ul li a p{
+    margin: 25px 20px 20px 20px; 
+    font-size: 14px;
+    color: #050505;
+}
+
+.box_bd ul li span{
+    color: #767575;
+    font-size: 12px;
+
+}
+
+.box_bd ul li .level{
+    color: orange;
+    margin: 0px 10px 0px 20px;
+
+}
+
+.box_bd ul li .people_num {
+    margin: 0px 0px 0px 10px;
+
+}
+ .box_bd  ul li a img{
+    width: 100%;
+} 
+
+
+/* footer模块 */
+.footer {
+      height: 415px;
+      background-color: rgb(255, 255, 255);
+      margin-top: 40px;
+}
+
+.footer .w{
+    padding-top: 35px;
+}
+
+.copyright{
+    float: left;
+}
+
+.links {
+    float: right;
+}
+
+.copyright p {
+    margin-top: 23px;
+    width: 430px;
+}
+
+.copyright a{
+    display: block;
+    height: 35px ;
+    width: 120px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 35px;
+    color: #00a4ff;
+    border: #00a4ff solid 1px;
+    margin-top: 15px;
+    padding: 9px 25px 9px 29px;
+}
+.box_bd ul li {
+    position: relative;
+}
+
+.hot{
+   position: absolute;
+   top: 0px;
+   right: -4px;
+
+}
+
+.new{
+    position: absolute;
+    top: 0px;
+    right: -4px;
+    height: 17px;
+    width: 40px; 
+}
+
+
+.job_training{
+    background-color: white;
+    position: fixed;
+    left: 150px;
+    top:400px;
+    width: 180px;
+    height: 425px;
+
+}
+
+.job_training ul li {
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.job_training ul li a{
+    color: #000;
+    font-size: 14px;
+
+}
